@@ -38,7 +38,7 @@ entradaDeDados.question(UI.comeco, (resposta) => {
 
                     if (alturaUsuario) {
                         entradaDeDados.question('<|>Agora o peso: ', (peso) => {
-                            let pesoUsuario = utilidades.normalizarNumero(peso);
+                            let pesoUsuario = utilidades.normalizarNumero(peso, 2.1, 635);
 
                             if (pesoUsuario) {
                                 let imc = calculos.calcularImc(alturaUsuario, pesoUsuario);
