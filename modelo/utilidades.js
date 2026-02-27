@@ -1,5 +1,5 @@
 /*********************************************************************
- * Objetivo: Programar algumas funções variadas que todos os serviços usam
+ * Objetivo: Programar algumas funções variadas os projetos vão usar
  * Autor: Gabriel
  * Data: 25/02/26
  * Versão: 1.0.25.2
@@ -33,7 +33,7 @@ const _formatarNumero = function (numero) {
  * @param {string | number} numero - número que vamos verificar a integridade.
  * @param {number} minimo - Valor minimo permitido ao número.
  * @param {number} maximo - Valor máximo permitido ao número.
- * @returns {number | false} Caso a conversão seja possivél retornamos um número, caso não o retorno será um false.
+ * @returns {number | false} Caso a conversão seja possivel retornamos um número, caso não o retorno será um false.
  */
 const normalizarNumero = function (numero, minimo, maximo) {
     let numeroMinimo = Number(minimo);
@@ -50,7 +50,7 @@ const normalizarNumero = function (numero, minimo, maximo) {
         if (numeroCorrigido < numeroMinimo || numeroCorrigido > numeroMaximo) { //Verificando se o número atende aos limites impostos.
             return false; //Se não atender retorna false.
         } else {
-            return numeroCorrigido; //Se atender retorna true.
+            return numeroCorrigido; //Se atender retorna o numero.
         }
     } else { // Caso a conversão falhe retornamos false.
         return false;
