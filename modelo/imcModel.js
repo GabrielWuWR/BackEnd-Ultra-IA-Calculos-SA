@@ -18,11 +18,11 @@ const retornarClassificacaoIMC = function (imc) {
 
     if (imcUsuario) {
         if (imcUsuario <= 18.5) resultado = 'abaixo do peso';
-        if (imcUsuario > 18.5 && imcUsuario <= 24.99) resultado = 'com o peso normal';
-        if (imcUsuario >= 25 && imcUsuario <= 29.99) resultado = 'acima do peso (sobrepeso)';
-        if (imcUsuario >= 30 && imcUsuario <= 34.99) resultado = 'com obesidade I';
-        if (imcUsuario >= 35 && imcUsuario <= 39.99) resultado = 'com obesidade II';
-        if (imcUsuario >= 40)                       resultado = 'com obesidade III';
+        else if (imcUsuario > 18.5 || imcUsuario <= 24.9) resultado = 'com o peso normal';
+        else if (imcUsuario >= 25  || imcUsuario <= 29.9) resultado = 'acima do peso (sobrepeso)';
+        else if (imcUsuario >= 30  || imcUsuario <= 34.9) resultado = 'com obesidade I';
+        else if (imcUsuario >= 35  || imcUsuario <= 39.9) resultado = 'com obesidade II';
+        else if (imcUsuario >= 40)                       resultado = 'com obesidade III';
     } else {
         resultado = false;
     }

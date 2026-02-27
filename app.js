@@ -28,7 +28,6 @@ entradaDeDados.question(UI.comeco, (resposta) => {
         entradaDeDados.question('<|>Vamos começar, primeiro digite seu nome: ', (nome) => {
             let nomeUsuario = String(nome);
 
-
             if (nomeUsuario.trim() == '' || nomeUsuario == null || nomeUsuario == undefined) {
                 console.log(erros.ERRO_NOME_INVALIDO);
                 entradaDeDados.close();
