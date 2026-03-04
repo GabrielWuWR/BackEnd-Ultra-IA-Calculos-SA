@@ -23,7 +23,7 @@ const _formatarNumero = function (numero) {
     if (isNaN(numeroConvertido)) {
         return false;
     } else {
-        let numeroFinal = numeroConvertido.toFixed(2);
+        let numeroFinal = Number(numeroConvertido.toFixed(2));
         return numeroFinal;
     }
 }

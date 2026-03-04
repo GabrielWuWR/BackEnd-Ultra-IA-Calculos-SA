@@ -1,11 +1,11 @@
 /*********************************************************************
- * Objetivo: Programar algumas lógicas usadas no exercicio 1 sobre (imc)
+ * Objetivo: Programar algumas lógicas usadas no exercicio 1 (imc)
  * Autor: Gabriel
  * Data: 25/02/26
  * Versão: 1.0.25.2
  ********************************************************************/
 
-const utilidades = require('./utilidades');
+const utilidades = require('../utilidades');
 
 /**
  * função que recebe um imc e retorna sua classificação.
